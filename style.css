@@ -1,0 +1,150 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)), url('./img/stadium_lights.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: serif;
+}
+.top {
+    height: 50px;
+    background: rgb(46,95,253);
+    background: linear-gradient(90deg, rgba(46,95,253,1) 0%, rgba(154,46,254,1) 50%, rgba(255,0,255,1) 100%);
+    color: rgb(196, 247, 11);
+    font-size: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.logo {
+    padding-top: 70px;
+}
+section {
+    margin-top: 100px;
+}
+.header {
+    color: #eee;
+}
+.header h1::before {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 3px;
+    background: linear-gradient(90deg, #2e5ffd 0%, #9a2ffe 50%, rgba(255,0,255,1) 100%);
+    margin: 15px 0;
+}
+.header .books {
+    margin-top: 100px;
+    text-align: start;
+}
+.header .books h4 {
+    background-color: rgba(238, 238, 238, 0.268);
+    width: 85%;
+    padding: 4px 0 !important;
+    text-align: center;
+    margin-left: 17px;
+}
+.header .books img {
+    width: 20.5%;
+    height: 60px;
+    margin: 5px;
+    background-color: #fff;
+    padding: 7px;
+    filter: grayscale(1);
+}
+.header .books img:hover {
+    filter: grayscale(0);
+    border: 2px double #2e5ffd;
+}
+.sport-logo ul {
+    list-style: none;
+}
+.sport-logo img {
+    filter: grayscale(1);
+    width: 100px;
+}
+.sport-logo img:hover {
+    filter: grayscale(0);
+}
+
+.about {
+    background: rgba(255, 255, 255, 0.1);
+    border-top: 1px solid rgba(255,255,255,0.5);
+    border-left: 1px solid rgba(255,255,255,0.5);
+    backdrop-filter: blur(5px);
+    color: #fff;
+    max-width: 80%;
+    margin: 70px auto;
+    padding: 20px;
+}
+h2 {
+    font-size: 50px;
+    background: -webkit-linear-gradient(90deg, #2e5ffd 0%, #9a2ffe 50%, rgba(255,0,255,1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h2::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(90deg, #2e5ffd 0%, #9a2ffe 50%, rgba(255,0,255,1) 100%);
+    margin: 10px auto;
+}
+
+.features {
+    color: #eee;
+    max-width: 80%;
+    margin: auto;
+}
+.features h2 {
+    font-size: 40px;
+}
+.features span {
+    color: #9a2ffe;
+    font-size: 30px;
+    font-weight: 600;
+}
+.features .feature-item {
+    background-color: #060f2b65;
+    border: 1px dotted #9a2ffe;
+    box-shadow: 2px 2px 5px #9a2ffe6e;
+    height: 250px;
+}
+
+footer {
+    height: 40px;
+    background-color: #060f2bd7;
+    color: rgba(238, 238, 238, 0.707);
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .sport-logo img {
+        width: 70px;
+    }
+    .header .books h4 {
+        width: 100%;
+    }
+    .header .books {
+        text-align: end;
+    }
+}
+@media (max-width: 500px) {
+    .sport-logo ul {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+        margin-top: 57px;
+    }
+    .sport-logo img {
+        margin-bottom: 0px !important;
+    }
+    .sport-logo ul li {
+        display: inline-flex;
+        flex-wrap: wrap;
+    }
+    .sport-logo ul li img {
+        height: 70px;
+        width: 50px;
+    }
+}
